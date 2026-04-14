@@ -7,7 +7,7 @@ import { IoStatsChart } from "react-icons/io5";
 
 const Navbar = () => {
   return (
-    <div className="bg-white px-6 py-3 flex justify-between items-center border-b border-gray-300">
+    <div className="bg-white px-6 py-3 flex justify-between items-center border-b border-gray-300 ">
       
   {/* Logo */}
   <h1 className="text-xl font-semibold text-gray-800">

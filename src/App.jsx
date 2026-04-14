@@ -5,6 +5,8 @@ import Navbar from "./components/Navbar/Navbar";
 import Home from "./Pages/Home";
 import Timeline from "./Pages/Timeline";
 import Stats from "./Pages/Stats";
+import FriendDetails from "./Pages/FriendDetails";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
@@ -15,7 +17,9 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/timeline" element={<Timeline />} />
         <Route path="/stats" element={<Stats />} />
+        <Route path="/friend/:id" element={<FriendDetails />} />
       </Routes>
+      <Footer></Footer>
 
     </BrowserRouter>
   );
