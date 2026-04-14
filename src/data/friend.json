@@ -118,5 +118,31 @@
     "bio": "Best friend since childhood.",
     "goal": 7,
     "next_due_date": "2025-07-12"
+  },
+   {
+    "id": 11,
+    "name": "Rahim Uddin",
+    "picture": "https://api.dicebear.com/7.x/adventurer/svg?seed=Rahim",
+    "email": "rahim@example.com",
+    "days_since_contact": 4,
+    "status": "on-track",
+    "tags": ["office"],
+    "bio": "Office colleague, very friendly.",
+    "goal": 10,
+    "next_due_date": "2025-08-05"
+  },
+  {
+    "id": 12,
+    "name": "Sadia Islam",
+    "picture": "https://api.dicebear.com/7.x/adventurer/svg?seed=Sadia",
+    "email": "sadia@example.com",
+    "days_since_contact": 16,
+    "status": "overdue",
+    "tags": ["university", "friend"],
+    "bio": "University friend, loves coding.",
+    "goal": 12,
+    "next_due_date": "2025-07-14"
   }
+
+
 ]
