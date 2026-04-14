@@ -8,21 +8,22 @@ import Stats from "./Pages/Stats";
 import FriendDetails from "./Pages/FriendDetails";
 import Footer from "./components/Footer/Footer";
 
+import AppProvider from "./context/AppContext";
+
 function App() {
   return (
-    <BrowserRouter>
-      <Navbar />
-
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/timeline" element={<Timeline />} />
-        <Route path="/stats" element={<Stats />} />
-        <Route path="/friend/:id" element={<FriendDetails />} />
-      </Routes>
-      <Footer></Footer>
-
-    </BrowserRouter>
+    <AppProvider>
+      <BrowserRouter>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/timeline" element={<Timeline />} />
+          <Route path="/friend/:id" element={<FriendDetails />} />
+        </Routes>
+        <Footer />
+      </BrowserRouter>
+      </AppProvider>
   );
 }
 
-export default App;
+export default App

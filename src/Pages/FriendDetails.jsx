@@ -6,9 +6,14 @@ import { FaVideo } from "react-icons/fa";
 import { FaRegClock } from "react-icons/fa";
 import { FaArchive } from "react-icons/fa";
 import { FaTrash } from "react-icons/fa";
+import { useContext } from "react";
+import { AppContext } from "../context/AppContext";
 
 const FriendDetails = () => {
   const { id } = useParams();
+
+  const { addEvent } = useContext(AppContext);
+
   const friend = friends.find((f) => f.id === parseInt(id));
 
   if (!friend) {
@@ -119,17 +124,26 @@ const FriendDetails = () => {
             <h3 className="font-semibold mb-3 text-gray-800">Quick Check-In</h3>
 
             <div className="grid grid-cols-3 gap-4 text-center">
-              <div className="bg-gray-100 p-4 rounded hover:bg-gray-200 cursor-pointer flex flex-col items-center gap-2">
+              <div
+                onClick={() => addEvent("Call", friend.name)}
+                className="bg-gray-100 p-4 rounded hover:bg-gray-200 cursor-pointer flex flex-col items-center gap-2"
+              >
                 <FaPhoneAlt className="text-green-700 text-lg" />
                 <p className="text-sm text-gray-700">Call</p>
               </div>
 
-              <div className="bg-gray-100 p-4 rounded hover:bg-gray-200 cursor-pointer flex flex-col items-center gap-2">
+              <div
+                onClick={() => addEvent("Text", friend.name)}
+                className="bg-gray-100 p-4 rounded hover:bg-gray-200 cursor-pointer flex flex-col items-center gap-2"
+              >
                 <FaCommentDots className="text-blue-600 text-lg" />
                 <p className="text-sm text-gray-700">Text</p>
               </div>
 
-              <div className="bg-gray-100 p-4 rounded hover:bg-gray-200 cursor-pointer flex flex-col items-center gap-2">
+              <div
+                onClick={() => addEvent("Video", friend.name)}
+                className="bg-gray-100 p-4 rounded hover:bg-gray-200 cursor-pointer flex flex-col items-center gap-2"
+              >
                 <FaVideo className="text-purple-600 text-lg" />
                 <p className="text-sm text-gray-700">Video</p>
               </div>
@@ -137,9 +151,6 @@ const FriendDetails = () => {
           </div>
         </div>
       </div>
-
-    
-    
     </div>
   );
 };
