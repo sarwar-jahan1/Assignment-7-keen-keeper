@@ -19,6 +19,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/timeline" element={<Timeline />} />
           <Route path="/friend/:id" element={<FriendDetails />} />
+          <Route path="/stats" element={<Stats />} />
         </Routes>
         <Footer />
       </BrowserRouter>
