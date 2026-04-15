@@ -27,7 +27,7 @@ const FriendDetails = () => {
   return (
     <div className="bg-gray-100 min-h-screen py-6 sm:py-8 md:py-10 px-4 sm:px-6 md:px-10">
       <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6">
-        {/* LEFT CARD */}
+
         <div className="bg-white p-4 sm:p-6 rounded-lg shadow text-center">
           <img
             src={friend.picture}
@@ -64,9 +64,8 @@ const FriendDetails = () => {
             "{friend.bio}"
           </p>
 
-          <p className="text-xs text-gray-500 mt-1">Preferred: email</p>
+          <p className="text-xs text-gray-500 mt-1">Email: {friend.email}</p>
 
-          {/* Buttons */}
           <div className="mt-4 space-y-2 text-sm">
             <button className="w-full bg-gray-100 text-gray-700 font-medium py-2 rounded hover:bg-gray-200 flex items-center justify-center gap-2 text-xs sm:text-sm">
               <FaRegClock className="text-gray-600" />
@@ -85,9 +84,8 @@ const FriendDetails = () => {
           </div>
         </div>
 
-        {/* RIGHT SIDE */}
         <div className="md:col-span-2 space-y-4 sm:space-y-6">
-          {/* TOP STATS */}
+
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 sm:gap-4">
             <div className="bg-white p-3 sm:p-4 rounded-lg shadow text-center">
               <h2 className="text-lg sm:text-xl font-bold text-gray-800">
@@ -111,7 +109,6 @@ const FriendDetails = () => {
             </div>
           </div>
 
-          {/* RELATIONSHIP GOAL */}
           <div className="bg-white p-3 sm:p-4 rounded-lg shadow">
             <div className="flex justify-between items-center">
               <h3 className="font-semibold text-gray-800 text-sm sm:text-base">
@@ -127,7 +124,6 @@ const FriendDetails = () => {
             </p>
           </div>
 
-          {/* QUICK CHECK-IN */}
           <div className="bg-white p-3 sm:p-4 rounded-lg shadow">
             <h3 className="font-semibold mb-3 text-gray-800 text-sm sm:text-base">
               Quick Check-In

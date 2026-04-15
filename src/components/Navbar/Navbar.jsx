@@ -12,7 +12,6 @@ const Navbar = () => {
         <span className="font-bold">Keen</span>Keeper
       </h1>
 
-      {/* Menu */}
       <div className="flex items-center justify-center sm:justify-end gap-3 sm:gap-4 text-xs sm:text-sm font-medium flex-wrap">
         <NavLink
           to="/"

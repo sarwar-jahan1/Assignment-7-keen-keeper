@@ -5,7 +5,6 @@ import { Link } from "react-router-dom";
 const Home = () => {
   const [loading, setLoading] = useState(true);
 
-  // fake loading (1.5 sec)
   useEffect(() => {
     const timer = setTimeout(() => {
       setLoading(false);
@@ -27,7 +26,6 @@ const Home = () => {
         relationships that matter most.
       </p>
 
-      {/* Button */}
       <button className="bg-green-800 hover:bg-green-900 text-white px-4 py-2 rounded text-sm mb-10">
         + Add a Friend
       </button>
@@ -61,13 +59,12 @@ const Home = () => {
         </div>
       </div>
 
-      {/* Friend List */}
       <div className="max-w-5xl mx-auto mt-12 text-left">
         <h2 className="text-xl font-semibold mb-6 text-gray-800">
           Your Friends
         </h2>
 
-        {/* 🔥 LOADING STATE */}
+        {/* Loading state */}
         {loading ? (
           <div className="flex justify-center items-center py-10">
             <div className="w-10 h-10 border-4 border-green-700 border-t-transparent rounded-full animate-spin"></div>

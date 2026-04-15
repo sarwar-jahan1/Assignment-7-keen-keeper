@@ -23,7 +23,6 @@ const Timeline = () => {
               key={item.id}
               className="bg-white p-3 sm:p-4 rounded shadow flex items-center gap-3"
             >
-              {/* ICON */}
               <span className="text-base sm:text-lg">
                 {item.type === "Call" && (
                   <FaPhoneAlt className="text-green-600" />
@@ -36,7 +35,6 @@ const Timeline = () => {
                 )}
               </span>
 
-              {/* TEXT */}
               <div className="text-left">
                 <p className="font-medium text-gray-800 text-sm sm:text-base">
                   {item.type} with {item.name}
