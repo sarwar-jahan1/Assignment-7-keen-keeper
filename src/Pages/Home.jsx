@@ -60,7 +60,7 @@ const Home = () => {
       </div>
 
       <div className="max-w-5xl mx-auto mt-12 text-left">
-        <h2 className="text-xl font-semibold mb-6 text-gray-800">
+        <h2 className="text-xl font-bold mb-6 text-gray-800">
           Your Friends
         </h2>
 
